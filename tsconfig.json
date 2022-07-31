@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true,
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
@@ -12,10 +14,15 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsxdev",
+    "types": [
+      "jest",
+      "node",
+      "vite/client"
+    ],
   },
-  "include": ["src"],
+  "include": ["src", "src/global.d.ts", "tests"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
