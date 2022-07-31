@@ -1,6 +1,6 @@
 # React + Vite + TS - Project Template
 
-A template project, equiped with:
+A template project, equipped with:
 - ESLint support
 - Unit testing support using Jest + React Testing Library
 
