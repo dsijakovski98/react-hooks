@@ -1,7 +1,5 @@
-# React + Vite + TS - Project Template
+# React Hooks testing sandbox
+A sandbox project for testing custom hooks
 
-A template project, equipped with:
-- ESLint support
-- Unit testing support using Jest + React Testing Library
-
-Just clone the project and run `npm install` to install all the packages
+## useSelect
+Custom hook for dropdown (react-select) type components
