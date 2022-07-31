@@ -1,0 +1,99 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "react-app",
+        "react-app/jest",
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+                "paths": ["src"],
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            },
+            "typescript": {}
+        }
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "curly": "off",
+        "max-len": "off",
+        "quote-props": "off",
+        "guard-for-in": "off",
+        "comma-dangle": "off",
+        "react/prop-types": "off",
+        "consistent-return": "off",
+        "semi": ["error", "never"],
+        "no-case-declarations": "off",
+        "object-curly-newline": "off",
+        "react/button-has-type": "off",
+        "array-callback-return": "warn",
+        "react/jsx-indent": ["warn", 4],
+        "arrow-parens": ["error", "as-needed"],
+        "jsx-quotes": ["error", "prefer-single"],
+        "indent": ["warn", 4, { "SwitchCase": 1 }],
+        "prefer-const": ["error", { "destructuring": "all" }],
+        "quotes": ["warn", "single", { "allowTemplateLiterals": true }],
+
+        "jsx-a11y/interactive-supports-focus": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "@typescript-eslint/no-unused-vars": ["error"],
+
+        "testing-library/no-node-access": "off",
+        "testing-library/prefer-screen-queries": "off",
+        "testing-library/no-unnecessary-act": "off",
+
+        "no-alert": "off",
+        "no-var": "error",
+        "no-labels": "off",
+        "no-console": ["warn", { "allow": ["error"] }],
+        "no-continue": "off",
+        "no-loop-func":"warn",
+        "no-else-return": "warn",
+        "no-await-in-loop": "off",
+        "no-nested-ternary": "off",
+        "no-param-reassign": "off",
+        "no-mixed-operators":"warn",
+        "no-use-before-define": "off",
+        "no-restricted-syntax": "off",
+        "prefer-destructuring": "off",
+        "no-underscore-dangle": "off",
+        "no-bitwise": ["error", { "allow": ["~"] }],
+        "no-unused-vars": ["error", {"argsIgnorePattern": "^_"  }],
+        
+        "react/no-array-index-key": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/no-unescaped-entities": "off",
+        "react/require-default-props": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-indent-props": ["error", 4],
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".ts", ".jsx", ".tsx"] }],
+        
+        "import/extensions": "off",
+        "import/prefer-default-export": "off",
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.config.ts", "**/*.setup.js", "**/*.test.ts", "**/*.test.tsx"]}]
+    }
+}
